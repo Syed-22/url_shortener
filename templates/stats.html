@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link Stats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Link Stats</h1>
+        <p><strong>Short code:</strong> {{ row['short_code'] }}</p>
+        <p><strong>Original URL:</strong> {{ row['original_url'] }}</p>
+        <p><strong>Clicks:</strong> {{ row['clicks'] }}</p>
+        <a href="/">Back to home</a>
+    </div>
+
+</body>
+</html>
